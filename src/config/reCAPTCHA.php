@@ -1,0 +1,3 @@
+<?php
+
+return "6LfT2hEpAAAAABC2SiY-x4r7MXUMQbb7QbVa218Z";
