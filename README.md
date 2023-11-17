@@ -11,4 +11,6 @@
 - настроить подключение к базе (файл src/config/db.php)
 - вписать ключи для сервиса reCAPTCHA (файл src/config/db.php)
 - запустить MySQL
+- создать базу
+- выполнить скрипт Users.sql
 - запустить сервер через CLI PHP, Open Server, ...
