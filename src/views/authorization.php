@@ -1,5 +1,6 @@
 <?php
 session_start();
+$captcha_config = require "../config/reCAPTCHA.php"
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,7 +34,7 @@ session_start();
                 <input type="password" class="form-control" name="password" id="password">
             </div>
             <button type="submit" class="g-recaptcha btn btn-primary"
-                    data-sitekey="6LfT2hEpAAAAABjrsRqXB1ijhp9j9HOadGIYMCPZ"
+                    data-sitekey="<?= $captcha_config['public']?>"
                     data-callback='onSubmit'
                     data-action='submit'>Войти
             </button>

@@ -27,7 +27,8 @@ function botCheck()
 {
     if (isset($_POST['g-recaptcha-response']))
     {
-        $secret = require "../config/reCAPTCHA.php";
+        $captcha_config = require "../config/reCAPTCHA.php";
+        $secret = $captcha_config['secret'];
         $url = "https://www.google.com/recaptcha/api/siteverify";
         $url.= "?secret={$secret}&";
         $url.= "response={$_POST['g-recaptcha-response']}";
